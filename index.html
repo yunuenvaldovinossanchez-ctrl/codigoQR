@@ -51,7 +51,6 @@ function onScanSuccess(text){
 
     scanner.clear();
 
-    // Si es enlace, mostrar botón
     if(text.startsWith("http")){
         resultado.innerHTML += "<br><br><button onclick='abrirLink(\"" + text + "\")'>Abrir enlace</button>";
     }
